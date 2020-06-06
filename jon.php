@@ -16,11 +16,14 @@ echo "I Love learning Programming";
 # git pull origin master
 //Make your changes, write new codes, create new files and so on.
 //After you are done with working.
-//Let's save your changes in the cloud.
+//Let's save your CHANGES in the cloud.
 # git add .
 # git commit -am "I completed my html or css"
 # git pull origin master
 # if there is an error or long message then
 # git add .
-# git commit -am "fixing the merge conflict"
+# git commit -am "fixing the merge CONFLICTS"
+// else just push
 # git push origin master
+
+//You are done!
