@@ -65,6 +65,9 @@
 			<tr><td>ID:</td><td></td></tr>
 		</table>
 	</div>
+	
+	<!--- This is Box_4 -->
+	
 	<div class="box_4">
 		<a href="#">
 		<h4>Titanic</h4>
@@ -73,16 +76,25 @@
 		<p>"A young woman falls for a guy with a dark secret and the two embark on a rocky relationship. Based on the novel by Anna Todd."</p>
 	</div>
 </div>
+
+<!--- This is Latest Div --->
+
 <div id="bottom_div">
+	
+	<!--- Box_6 --->
+	
   <div class="box_6">
-	  <a href="">Get the FNM App</a>
-	  <a href="">Help</a>
-	  <a href="">Site Index</a>
-	  <a href="">FNMPro</a>
-	  <a href="">FNM TV</a>
-	  <a href="">Box Office Mojo</a>
-	  <a href="">FNM Developers</a>
+	  <a href="" style="text-decoration:none;">Get the FNM App</a>
+	  <a href="" style="text-decoration:none;">Help</a>
+	  <a href="" style="text-decoration:none;">Site Index</a>
+	  <a href="" style="text-decoration:none;">FNMPro</a>
+	  <a href="" style="text-decoration:none;">FNM TV</a>
+	  <a href="" style="text-decoration:none;">Box Office Mojo</a>
+	  <a href="" style="text-decoration:none;">FNM Developers</a>
   </div>
+	
+	<!--- This is Box_7 --->
+	
 	<div class="box_7">
 		<p>2000-2020 by FNM.com, Inc.</p>
 	</div>
