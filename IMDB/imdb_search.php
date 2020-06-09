@@ -11,11 +11,65 @@
     <script src="/js/jquery.js"></script>
 </head>
 <body>
+<?php
+include 'imdb_API.php';
+?>
+<div class="container-fluid">
+    <div class="fixed-top">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <h5 class="text-white h4">Collapsed content</h5>
+                <span class="text-muted">Toggleable via the navbar brand.</span>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <form method="GET">
+                <input id="movies" name="movies" autocomplete="off" tabindex="-1" type="text" placeholder="Search the web...">
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+        </nav>
+    </div>
+    <a class="www"><a><img class="poster" src="<?= $Titanic->poster ?>"</a></a>
+    <table class="table table-bordered">
+        <tr><td><a>Title:  </a><a><?=$Titanic->title?></a></td></tr>
+        <tr><td><a>Year:  </a><a><?=$Titanic->year?></a></td></tr>
+        <tr><td><a>Length:  </a><a><?=$Titanic->length?></a></td></tr>
+        <tr><td><a>Rating:  </a><a><?=$Titanic->rating?></a></td></tr>
+        <tr><td><a>Rating_votes:  </a><a><?=$Titanic->rating_votes?></a></td></tr>
+        <tr><td><a>Plot:  </a><a><?=$Titanic->plot?></a></td></tr>
+        <tr><td><a href="<?= $Titanic->trailer->link ?>"> Watch Movie</a></td></tr>
+    </table>
+</div>
+<style>
+    .container-fluid{
+        margin-top:70px;
+        width:100%;
+        height: 100%;
+    }
+    .fixed-top{
+        width:100%;
+        height:70px;
+    }
+    .www{
+        float:left;
+        position:relative;
+    }
+    .table{
+        width:20%;
+        height: 20%;
+        right:700px;
+        float:right;
+        position:relative;
+    }
+    .poster{
+        width:300px;
+        height:500px;
+    }
 
-
-
-
-
+</style>
 <script src="/js/jquery.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 </body>

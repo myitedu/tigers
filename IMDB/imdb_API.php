@@ -1,6 +1,6 @@
 <?php
 $movies=$_GET['movies']??'Titanic';
-$titanic=[];
+$Titanic=[];
 $curl = curl_init();
 curl_setopt_array($curl, array(
     CURLOPT_URL => "https://imdb-internet-movie-database-unofficial.p.rapidapi.com/film/$movies",
@@ -22,8 +22,6 @@ curl_close($curl);
 if ($err) {
     echo "cURL Error #:" . $err;
 } else {
-    $titanic= json_decode($response);
+    $Titanic= json_decode($response);
 }
-echo"<pre>";
-print_r($titanic);
-echo"</pre>";
+
