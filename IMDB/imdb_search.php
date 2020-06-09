@@ -34,13 +34,13 @@ include 'imdb_API.php';
     </div>
     <a class="www"><a><img class="poster" src="<?= $Titanic->poster ?>"</a></a>
     <table class="table table-bordered">
-        <tr><td><a>Title:  </a><a><?=$Titanic->title?></a></td></tr>
-        <tr><td><a>Year:  </a><a><?=$Titanic->year?></a></td></tr>
-        <tr><td><a>Length:  </a><a><?=$Titanic->length?></a></td></tr>
-        <tr><td><a>Rating:  </a><a><?=$Titanic->rating?></a></td></tr>
-        <tr><td><a>Rating_votes:  </a><a><?=$Titanic->rating_votes?></a></td></tr>
-        <tr><td><a>Plot:  </a><a><?=$Titanic->plot?></a></td></tr>
-        <tr><td><a href="<?= $Titanic->trailer->link ?>"> Watch Movie</a></td></tr>
+        <tr><td><a><i class="fa fa-heading"></i>  Title:  </a><a><?=$Titanic->title?></a></td></tr>
+        <tr><td><a><i class="fa fa-calendar-day"></i>  Year:  </a><a><?=$Titanic->year?></a></td></tr>
+        <tr><td><a><i class="fa fa-business-time"></i>  Length:  </a><a><?=$Titanic->length?></a></td></tr>
+        <tr><td><a><i class="fa fa-volume-up"></i>  Rating:  </a><a><?=$Titanic->rating?></a></td></tr>
+        <tr><td><a><i class="fa fa-vote-yea"> </i>  Rating_votes:  </a><a><?=$Titanic->rating_votes?></a></td></tr>
+        <tr><td><a><i class="fa fa-info"></i>  Plot:  </a><a><?=$Titanic->plot?></a></td></tr>
+        <tr><td><a href="<?= $Titanic->trailer->link ?>"><button>Watch_Movies</button></a></td></tr>
     </table>
 </div>
 <style>
@@ -58,9 +58,9 @@ include 'imdb_API.php';
         position:relative;
     }
     .table{
-        width:20%;
-        height: 20%;
-        right:700px;
+        width:40%;
+        height: 500px;
+        right:600px;
         float:right;
         position:relative;
     }
@@ -68,7 +68,6 @@ include 'imdb_API.php';
         width:300px;
         height:500px;
     }
-
 </style>
 <script src="/js/jquery.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
