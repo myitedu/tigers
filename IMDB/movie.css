@@ -1,4 +1,3 @@
-
 .box_7{
     top:55%;
     width:40%;
@@ -10,7 +9,6 @@
 .box_6 a{
     color:white;
     padding:3%;
-    text-decoration:none;
 }
 .box_6{
     top:15%;
@@ -56,14 +54,6 @@ table{
 table, tr, td{
     border:1px solid whitesmoke;
 }
-tr:nth-child(even){
-  background-color: #dbd9d9;
-    cursor:pointer;
-}
-tr:nth-child(odd){
-    cursor:pointer;
-    background-color: #e4dddd;
-}
 .box_2{
     width:45%;
     height:700px;
@@ -92,18 +82,12 @@ tr:nth-child(odd){
     margin-left:17%;
     font-size:110%;
     border-radius:5px;
-    text-decoration:none;
 }
 #top_div a:last-child{
     color:white;
     padding-left:8%;
     font-size:110%;
     border-radius:5px;
-    text-decoration:none;
-}
-#top_div a:hover{
-    color: blue;
-    background-color: #151515;
 }
 #container-fluid{
     width:75%;
@@ -131,13 +115,13 @@ button{
     width:7%;
 }
 label{
-   color: white;
+    color: white;
     padding-left:9%;
     font-size:110%;
     text-align:center;
     border-radius:5px;
 }
- body{
+body{
     width:100%;
     height:1200px;
     background-color: #c8c5c5 !important;

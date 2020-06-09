@@ -13,6 +13,9 @@
 </head>
 <body>
 
+<?php
+include "imdb_API.php";
+?>
 <!--- Top Menu --->
 
 <div id="top_div">
@@ -57,12 +60,13 @@
    ---->
 	<div class="box_3">
 		<table>
-			<tr><td style=" width:50%;">Title:</td><td></td></tr>
-			<tr><td>Year:</td><td></td></tr>
-			<tr><td>Length:</td><td></td></tr>
-			<tr><td>Rating:</td><td></td></tr>
-			<tr><td>Rating Vote:</td><td></td></tr>
-			<tr><td>ID:</td><td></td></tr>
+            <tr><td><a><i class="fa fa-heading"></i>  Title:  </a><a><?=$Titanic->title?></a></td></tr>
+            <tr><td><a><i class="fa fa-calendar-day"></i>  Year:  </a><a><?=$Titanic->year?></a></td></tr>
+            <tr><td><a><i class="fa fa-business-time"></i>  Length:  </a><a><?=$Titanic->length?></a></td></tr>
+            <tr><td><a><i class="fa fa-volume-up"></i>  Rating:  </a><a><?=$Titanic->rating?></a></td></tr>
+            <tr><td><a><i class="fa fa-vote-yea"> </i>  Rating_votes:  </a><a><?=$Titanic->rating_votes?></a></td></tr>
+            <tr><td><a><i class="fa fa-info"></i>  Plot:  </a><a><?=$Titanic->plot?></a></td></tr>
+            <tr><td><a href="<?= $Titanic->trailer->link ?>"><button>Watch_Movies</button></a></td></tr>
 		</table>
 	</div>
 	
