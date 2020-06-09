@@ -100,9 +100,9 @@ include "CurrenseExchange.php";
                     <tr><td>Currency Code: </td><td><?=$Money->base_currency_code?></td></tr>
                     <tr><td>First Currency Name: </td><td><?=$Money->base_currency_name?></td></tr>
 
-                    <tr><td>Second Currency Name: </td><td><?=$Money->rates->currency_name?></td></tr>
-                    <tr><td>Rate: </td><td><?=$Money->rates->rate?></td></tr>
-                    <tr><td>Rate of Amount: </td><td><?=$Money->rates->rate_for_amount?></td></tr>
+                    <tr><td>Second Currency Name: </td><td><?=$Money->rates->$country2->currency_name?></td></tr>
+                    <tr><td>Rate: </td><td><?=$Money->rates->$country2->rate?></td></tr>
+                    <tr><td>Rate of Amount: </td><td><?=$Money->rates->$country2->rate_for_amount?></td></tr>
 
                     <tr><td>Status: </td><td><?=$Money->status?></td></tr>
                     <tr><td>Updated date: </td><td><?=$Money->updated_date?></td></tr>
