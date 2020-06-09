@@ -6578,7 +6578,7 @@ fan:
 fantasy-flight-games:
   changes:
     - 5.4.0
-  label: Fantasy Flight-games
+  label: Fantasy Flight-FNM
   search:
     terms:
       - Dungeons & Dragons

@@ -970,7 +970,7 @@ games:
     - steam-symbol
     - twitch
     - xbox
-  label: Games
+  label: FNM
 gaming-tabletop:
   icons:
     - acquisitions-incorporated
@@ -982,7 +982,7 @@ gaming-tabletop:
     - dice-d6
     - dragon
     - dungeon
-    - fantasy-flight-games
+    - fantasy-flight-FNM
     - fist-raised
     - hat-wizard
     - penny-arcade
