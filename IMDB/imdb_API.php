@@ -1,9 +1,9 @@
 <?php
-
+$movies=$_GET['movies']??'Titanic';
+$titanic=[];
 $curl = curl_init();
-
 curl_setopt_array($curl, array(
-    CURLOPT_URL => "https://imdb-internet-movie-database-unofficial.p.rapidapi.com/film/Titanic",
+    CURLOPT_URL => "https://imdb-internet-movie-database-unofficial.p.rapidapi.com/film/$movies",
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_FOLLOWLOCATION => true,
     CURLOPT_ENCODING => "",
@@ -16,14 +16,14 @@ curl_setopt_array($curl, array(
         "x-rapidapi-key: 074c00bcdfmshc5273e5c025ce3cp1bd31bjsn590ab169acbe"
     ),
 ));
-
 $response = curl_exec($curl);
 $err = curl_error($curl);
-
 curl_close($curl);
-
 if ($err) {
     echo "cURL Error #:" . $err;
 } else {
-    echo $response;
+    $titanic= json_decode($response);
 }
+echo"<pre>";
+print_r($titanic);
+echo"</pre>";
