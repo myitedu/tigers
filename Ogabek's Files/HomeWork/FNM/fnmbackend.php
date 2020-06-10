@@ -1,6 +1,7 @@
 <?php
 
 $movies = $_GET['keyword'] ?? 'Titanic';
+$movies = strip_tags ($movies);
 $Titanic = [];
 $curl = curl_init ();
 curl_setopt_array ($curl, array (
