@@ -60,7 +60,7 @@ include 'imdb_API.php';
     .table{
         width:40%;
         height: 500px;
-        right:600px;
+        right:500px;
         float:right;
         position:relative;
     }

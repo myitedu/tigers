@@ -14,7 +14,7 @@
 <body>
 
 <?php
-include "imdb_API.php";
+include "fnmbackend.php";
 ?>
 <!--- Top Menu --->
 
@@ -22,7 +22,7 @@ include "imdb_API.php";
 	<form method="get">
 		<a href="#">HOME</a>
 		<label>Search:</label>
-		<input type="search" size="50" name="keyword" placeholder="Search FNM" value="" required>
+		<input type="search" size="50" name="keyword" placeholder="Search FNM" value="<?=$keyword?>" required>
 		<button type="submit" class="btn btn-success"><i class="fa fa-search"></i></button>
 		<a href="#">HOME</a>
 	</form>
@@ -33,10 +33,10 @@ include "imdb_API.php";
 <div id="container-fluid">
 	
 	<!--- First Box --->
-		
+	
 	<div id="box_1">
 		<a href="https://www.amazon.com/dp/B085SW2PFQ">
-		<img class="img_1" src=https://images-na.ssl-images-amazon.com/images/G/01/shazam/HOCO-S2-01837-IMDBStaticBillboard-970x250-POST-Final-en-US-HO-PVD4582-63821-8c424fb9-ff42-4b26-80a2-abee8f7f623c.jpg" alt="">
+			<img class="img_1" src=https://images-na.ssl-images-amazon.com/images/G/01/shazam/HOCO-S2-01837-IMDBStaticBillboard-970x250-POST-Final-en-US-HO-PVD4582-63821-8c424fb9-ff42-4b26-80a2-abee8f7f623c.jpg" alt="">
 		</a>
 	</div>
 	<hr>
@@ -44,9 +44,9 @@ include "imdb_API.php";
 	<!--- Box_2 Div --->
 	
 	<div class="box_2">
-	  <a href="#">
-		<img class="img_2" src="https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@.jpg" alt="">
-	  </a>
+		<a href="#">
+			<img class="img_2" src="<?= $Titanic->poster ?>" alt="">
+		</a>
 	</div>
 	
 	<!--- Box_3 Div and Table --->
@@ -60,45 +60,33 @@ include "imdb_API.php";
    ---->
 	<div class="box_3">
 		<table>
-            <tr><td><a><i class="fa fa-heading"></i>  Title:  </a><a><?=$Titanic->title?></a></td></tr>
-            <tr><td><a><i class="fa fa-calendar-day"></i>  Year:  </a><a><?=$Titanic->year?></a></td></tr>
-            <tr><td><a><i class="fa fa-business-time"></i>  Length:  </a><a><?=$Titanic->length?></a></td></tr>
-            <tr><td><a><i class="fa fa-volume-up"></i>  Rating:  </a><a><?=$Titanic->rating?></a></td></tr>
-            <tr><td><a><i class="fa fa-vote-yea"> </i>  Rating_votes:  </a><a><?=$Titanic->rating_votes?></a></td></tr>
-            <tr><td><a><i class="fa fa-info"></i>  Plot:  </a><a><?=$Titanic->plot?></a></td></tr>
-            <tr><td><a href="<?= $Titanic->trailer->link ?>"><button>Watch_Movies</button></a></td></tr>
+			<tr><td><a><i class="fa fa-heading"></i>  Title:  </a><a><?=$Titanic->title?></a></td></tr>
+			<tr><td><a><i class="fa fa-calendar-day"></i>  Year:  </a><a><?=$Titanic->year?></a></td></tr>
+			<tr><td><a><i class="fa fa-business-time"></i>  Length:  </a><a><?=$Titanic->length?></a></td></tr>
+			<tr><td><a><i class="fa fa-volume-up"></i>  Rating:  </a><a><?=$Titanic->rating?></a></td></tr>
+			<tr><td><a><i class="fa fa-vote-yea"> </i>  Rating_votes:  </a><a><?=$Titanic->rating_votes?></a></td></tr>
+			<tr><td><a><i class="fa fa-info"></i>  Plot:  </a><a><?=$Titanic->plot?></a></td></tr>
+			<tr><td><a href="<?= $Titanic->trailer->link ?>"><button>Watch_Movies</button></a></td></tr>
 		</table>
 	</div>
-	
-	<!--- This is Box_4 -->
-	
 	<div class="box_4">
 		<a href="#">
-		<h4>Titanic</h4>
+			<h4></h4></h4>
 		</a>
 		<hr>
 		<p>"A young woman falls for a guy with a dark secret and the two embark on a rocky relationship. Based on the novel by Anna Todd."</p>
 	</div>
 </div>
-
-<!--- This is Latest Div --->
-
 <div id="bottom_div">
-	
-	<!--- Box_6 --->
-	
-  <div class="box_6">
-	  <a href="" style="text-decoration:none;">Get the FNM App</a>
-	  <a href="" style="text-decoration:none;">Help</a>
-	  <a href="" style="text-decoration:none;">Site Index</a>
-	  <a href="" style="text-decoration:none;">FNMPro</a>
-	  <a href="" style="text-decoration:none;">FNM TV</a>
-	  <a href="" style="text-decoration:none;">Box Office Mojo</a>
-	  <a href="" style="text-decoration:none;">FNM Developers</a>
-  </div>
-	
-	<!--- This is Box_7 --->
-	
+	<div class="box_6">
+		<a href="">Get the FNM App</a>
+		<a href="">Help</a>
+		<a href="">Site Index</a>
+		<a href="">FNMPro</a>
+		<a href="">FNM TV</a>
+		<a href="">Box Office Mojo</a>
+		<a href="">FNM Developers</a>
+	</div>
 	<div class="box_7">
 		<p>2000-2020 by FNM.com, Inc.</p>
 	</div>
