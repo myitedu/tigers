@@ -49,15 +49,6 @@ include "imdb_API.php";
         </a>
     </div>
 
-    <!--- Box_3 Div and Table --->
-    <!---
-    "id":"tt4126476"
-"title":"After "
-"year":"2019"
-"length":"1h 45min"
-"rating":"5.4"
-"rating_votes":"22887"
-   ---->
     <div class="box_3">
         <table>
             <tr><td><a><i class="fa fa-heading"></i>  Title:  </a><a><?=$Titanic->title?></a></td></tr>
@@ -65,12 +56,11 @@ include "imdb_API.php";
             <tr><td><a><i class="fa fa-business-time"></i>  Length:  </a><a><?=$Titanic->length?></a></td></tr>
             <tr><td><a><i class="fa fa-volume-up"></i>  Rating:  </a><a><?=$Titanic->rating?></a></td></tr>
             <tr><td><a><i class="fa fa-vote-yea"> </i>  Rating_votes:  </a><a><?=$Titanic->rating_votes?></a></td></tr>
-            <tr><td><a><i class="fa fa-info"></i>  Plot:  </a><a><?=$Titanic->plot?></a></td></tr>
-            <tr><td><a href="<?= $Titanic->trailer->link ?>"><button>Watch_Movies</button></a></td></tr>
+            <tr><td><a style="width:40px; height:20px; " href="<?= $Titanic->trailer->link ?>">Watch_Movie</a></td></tr>
         </table>
     </div>
     <div class="box_4">
-        <a href="#">
+        <a >
             <h4><?=$Titanic->title?></h4>
         </a>
         <hr>

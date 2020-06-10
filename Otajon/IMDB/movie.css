@@ -1,3 +1,7 @@
+#knopka{
+    width:100px;
+    height: 100px;
+}
 .box_7{
     top:55%;
     width:40%;
@@ -110,9 +114,6 @@ input{
     width:30%;
     text-align:center;
     border-radius:5px;
-}
-button{
-    width:7%;
 }
 label{
     color: white;
