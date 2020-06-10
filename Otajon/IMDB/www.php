@@ -22,7 +22,7 @@ include "imdb_API.php";
     <form method="get">
         <a href="#">HOME</a>
         <label>Search:</label>
-        <input type="search" id="movies" name="movies" size="50" name="keyword" placeholder="Search FNM" value="" required>
+        <input type="search" id="movies" name="movies" size="50" placeholder="Search the web..." value="" required>
         <button type="submit" class="btn btn-success"><i class="fa fa-search"></i></button>
         <a href="#">HOME</a>
     </form>
