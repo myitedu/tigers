@@ -24,7 +24,10 @@ curl_close ($curl);
 if ($err) {
 		echo "cURL Error #:" . $err;
 } else {
-		$Titanic = json_decode ($response);
+		$Titanic = json_decode ($response,1);
 }
+echo  "<pre>";
+var_dump ($Titanic['title']);
+echo "</pre>";
 
 ?>
