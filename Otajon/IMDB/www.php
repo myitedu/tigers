@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Top Movies in The Our FNM</title>
     <link rel="stylesheet" href="movie.css">
@@ -12,7 +11,6 @@
     <script src="/js/bootstrap.js"></script>
 </head>
 <body>
-
 <?php
 include "imdb_API.php";
 ?>
@@ -20,11 +18,11 @@ include "imdb_API.php";
 
 <div id="top_div">
     <form method="get">
-        <a href="#">HOME</a>
+        <a href="https://www.imdb.com/?ref_=nv_home"><img style="width:100px; height: 40px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/1200px-IMDB_Logo_2016.svg.png"></a>
         <label>Search:</label>
-        <input type="search" id="movies" name="movies" size="50" placeholder="Search the web..." value="" required>
+        <input type="search" id="movies" name="movies" size="50" placeholder="Search the web..." value="<?=$movies?>" required>
         <button type="submit" class="btn btn-success"><i class="fa fa-search"></i></button>
-        <a href="#">HOME</a>
+        <a href="#"></a>
     </form>
 </div>
 
@@ -36,7 +34,7 @@ include "imdb_API.php";
 
     <div id="box_1">
         <a href="https://www.amazon.com/dp/B085SW2PFQ">
-            <img class="img_1" src=https://images-na.ssl-images-amazon.com/images/G/01/shazam/HOCO-S2-01837-IMDBStaticBillboard-970x250-POST-Final-en-US-HO-PVD4582-63821-8c424fb9-ff42-4b26-80a2-abee8f7f623c.jpg" alt="">
+            <img class="img_1" src="https://images-na.ssl-images-amazon.com/images/G/01/shazam/HOCO-S2-01837-IMDBStaticBillboard-970x250-POST-Final-en-US-HO-PVD4582-63821-8c424fb9-ff42-4b26-80a2-abee8f7f623c.jpg" alt="">
         </a>
     </div>
     <hr>
@@ -44,11 +42,8 @@ include "imdb_API.php";
     <!--- Box_2 Div --->
 
     <div class="box_2">
-        <a href="#">
-            <a><img class="img_2" src="<?= $Titanic->poster ?>"</a>
-        </a>
+            <a href="<?=$Titanic->trailer->link?>"><img class="img_2" src="<?= $Titanic->poster ?>"></a>
     </div>
-
     <div class="box_3">
         <table>
             <tr><td><a><i class="fa fa-heading"></i>  Title:  </a><a><?=$Titanic->title?></a></td></tr>
@@ -56,7 +51,6 @@ include "imdb_API.php";
             <tr><td><a><i class="fa fa-business-time"></i>  Length:  </a><a><?=$Titanic->length?></a></td></tr>
             <tr><td><a><i class="fa fa-volume-up"></i>  Rating:  </a><a><?=$Titanic->rating?></a></td></tr>
             <tr><td><a><i class="fa fa-vote-yea"> </i>  Rating_votes:  </a><a><?=$Titanic->rating_votes?></a></td></tr>
-            <tr><td><a style="width:40px; height:20px; " href="<?= $Titanic->trailer->link ?>">Watch_Movie</a></td></tr>
         </table>
     </div>
     <div class="box_4">

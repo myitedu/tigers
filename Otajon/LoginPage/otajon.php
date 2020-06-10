@@ -50,8 +50,7 @@ if(isset($_POST['is_form_submitted'])&&$_POST['is_form_submitted']==1){
                     <button class="btn btn-success" type="submit">Login</button>
                 </td>
             </tr>
-        </table>
-    </form>
+        </table>    </form>
 </div>
 <style>
     .container-fluid{

@@ -1,5 +1,5 @@
 <?php
-$movies=$_GET['movies']??'Titanic';
+$movies=$_GET['movies']??'Spiderman';
 $Titanic=[];
 $curl = curl_init();
 curl_setopt_array($curl, array(
