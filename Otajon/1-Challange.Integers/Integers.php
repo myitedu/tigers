@@ -107,15 +107,15 @@ function getMiddle($num1,$num2,$num3)
     {
         if ($num1<$num3 && $num2<$num3)
         {
-            echo "Minimum number is $num2";
+            echo "Middle number is $num2";
         }
         else if($num1<$num3 && $num2>$num3)
         {
-            echo "Minimum number is $num3";
+            echo "Middle number is $num3";
         }
         else if($num1>$num3)
         {
-            echo"Minimum number is $num1";
+            echo"Middle number is $num1";
         }
         else if($num1=$num3)
         {
