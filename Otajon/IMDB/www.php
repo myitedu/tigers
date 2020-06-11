@@ -32,19 +32,41 @@ include "imdb_API.php";
 
     <!--- First Box --->
 
-    <div id="box_1">
-        <a href="https://www.amazon.com/dp/B085SW2PFQ">
-            <img class="img_1" src="https://images-na.ssl-images-amazon.com/images/G/01/shazam/HOCO-S2-01837-IMDBStaticBillboard-970x250-POST-Final-en-US-HO-PVD4582-63821-8c424fb9-ff42-4b26-80a2-abee8f7f623c.jpg" alt="">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="width:100%; height:320px;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="https://www.amazon.com/dp/B085SW2PFQ">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/01/shazam/HOCO-S2-01837-IMDBStaticBillboard-970x250-POST-Final-en-US-HO-PVD4582-63821-8c424fb9-ff42-4b26-80a2-abee8f7f623c.jpg" class="d-block w-100" alt="">
+                </a>
+            </div>
+
+            <div class="carousel-item">
+                <a href="https://www.amazon.com/dp/B0884S38JG?ref=dvm_us_jm_as_imdb_pcqcbwn0605GBRIS1US">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/01/shazam/GBRI-S1-01928-IMDBStaticBillboard-970x250-POST-Final-en-US-HO-PVD4272-65947-65981bf7-675c-41da-9dca-25c669fe976c.jpg" class="d-block w-100" alt="">
+                </a>
+            </div>
+
+            <div class="carousel-item">
+                <a href="https://www.amazon.co.uk/gp/video/detail/B07G9PHJH9">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/01/shazam/MRSM-S3-01465-PMHouse-970x250-POST-Final-en-US-HO-PVD3356-t44Gf-90a56fea-3dfd-43db-acc3-f4870f6de319.jpg" class="d-block w-100" alt="">
+                </a>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
         </a>
     </div>
-    <hr>
-
     <!--- Box_2 Div --->
 
     <div class="box_2">
             <a href="<?=$Titanic->trailer->link?>"><img class="img_2" src="<?= $Titanic->poster ?>"></a>
     </div>
-    <div class="box_3">
+    <div class="box_3" style="background-color:#B2AFADAD;">
         <table>
             <tr><td><a><i class="fa fa-heading"></i>  Title:  </a><a><?=$Titanic->title?></a></td></tr>
             <tr><td><a><i class="fa fa-calendar-day"></i>  Year:  </a><a><?=$Titanic->year?></a></td></tr>
@@ -53,7 +75,7 @@ include "imdb_API.php";
             <tr><td><a><i class="fa fa-vote-yea"> </i>  Rating_votes:  </a><a><?=$Titanic->rating_votes?></a></td></tr>
         </table>
     </div>
-    <div class="box_4">
+    <div class="box_4" style="background-color:#B2AFADAD;">
         <a >
             <h4><?=$Titanic->title?></h4>
         </a>

@@ -1,4 +1,6 @@
-
+#carouselExampleControls{
+    margin-bottom: 5%;
+}
 .box_7{
     top:55%;
     width:40%;
@@ -44,6 +46,7 @@
     float:right;
     border-radius:10px;
     border:1px solid lightslategrey;
+    background-color: #6b7c93;
 }
 table{
     width:100%;
