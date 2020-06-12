@@ -9,8 +9,8 @@ function getMax($num1, $num2, $num3)
       else if ($num1<$num3){
           echo "Maximum number is $num3";
       }
-      else{
-          echo "Maximum number is $num2";
+      else if($num1=$num3){
+          echo "Maximum number is $num1";
       }
    }
    else  if($num1<$num2)
@@ -121,11 +121,14 @@ function getMiddle($num1,$num2,$num3)
         {
             echo "We have two same number $num1 and bigger number is $num2";
         }
-        else{
-            echo "We have two same number $num2 and smoller number is $num1";
-        }
     }
-    else {
+    else if($num1=$num2 && $num1>$num3){
+        echo "We have two same numbers and one Minimum number $num3";
+    }
+    else if($num1=$num2 && $num1<$num3){
+        echo "We have two same numbers and one Maximum number $num3";
+    }
+    else{
         echo "All numbers are same";
     }
 }
