@@ -126,7 +126,6 @@ include 'GoogleAPI.php';
         </select>
         </div>
         <textarea class="textarea1" name="Text"  value="<?=$Text?>">
-
         </textarea>
         <div class="Languages2">
         <select  name="Languages2" value="Languages2" class="form-control">
