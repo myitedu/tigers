@@ -52,6 +52,28 @@
     </div>
 
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <div id="form_search">
+            <h4>Search your hotel</h4>
+            <div class="myform">
+                <form action="backend.php" method="get">
+                    <table class="table">
+                        <tr>
+                            <td>
+                                <div class=""
+                            </td>
+                        </tr>
+                        <tr><td>yep</td></tr>
+                        <tr><td>yep</td></tr>
+                        <tr><td>yep</td></tr>
+
+                    </table>
+
+                    <button type="submit" class="btn btn-warning">Search</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -61,22 +83,16 @@
             <div class="carousel-item active">
                 <img src="img/sheraton.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="img/hayyat.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="img/pool.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                 </div>
             </div>
         </div>
@@ -88,18 +104,43 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
+
+
+</div>
+<div id="results">
+    <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
     </div>
+</div>
+<div class="form group">
 
-
-
-
-
-
+</div>
 
 <style>
+    .myform{
+        width: 740px;
+        height: auto;
+        position: relative;
+        left: 300px;
+        top: 270px;
+        border: 3px solid darkslategrey;
+        z-index: 1000;
+        padding: 5px;
+    }
+    body{
+        background-color: #bbb9a8;
+    }
+    .container-fluid{
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
     .w-100{
         width: 100%;
-        height: 320px;
+        height: 800px;
     }
     .logo{
         width: 120px;
@@ -110,17 +151,21 @@
     .bg-light{
         background-color: #bbb9a8 !important;
     }
-    .col-1{
-        height: 100%;
-        width: 600px;
-    }
- </style>
 
+
+
+ </style>
 
     <script src="/js/bootstrap.min.js"></script>
 
 
 
-</div>
+
+
+
+
+
+
+
 </body>
 </html>
