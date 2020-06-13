@@ -3,12 +3,10 @@ $country1 = $_GET['enter_code1']??'en';
 $country1 = strip_tags ($country1);
 $country2 = $_GET['enter_code2']??'uz';
 $country2 = strip_tags ($country2);
-$country3 = $_GET['enter_code3']??'The Best Group is Tigers';
+$country3 = $_GET['enter_code3']??'Hello';
 $country3 = strip_tags ($country3);
 $product = [];
-
 $curl = curl_init();
-
 curl_setopt_array($curl, array(
 		CURLOPT_URL => "https://hirak-translate.p.rapidapi.com/tr/?to=$country2&txt=$country3&from=$country1",
 		CURLOPT_RETURNTRANSFER => true,
@@ -23,12 +21,9 @@ curl_setopt_array($curl, array(
 				"x-rapidapi-key: 2cc746c782mshf0bfaefc4546853p1d49f1jsn4e54b9b3ab33"
 		),
 ));
-
 $response = curl_exec($curl);
 $err = curl_error($curl);
-
 curl_close($curl);
-
 if ($err) {
 		echo "cURL Error #:" . $err;
 		$product = [
@@ -44,6 +39,9 @@ if ($err) {
 		];
 		$product = json_decode ($response,1);
 }
+echo "<pre>";
+var_dump($product['result']);
+echo "</pre>";
 ?>
 
 

@@ -1,7 +1,7 @@
 <?php
-$a=$_GET['number1']??null;
-$b=$_GET['number2']??null;
-$c=$_GET['number3']??null;
+$a=$_GET['number1']??'-23';
+$b=$_GET['number2']??'43';
+$c=$_GET['number3']??'23';
 function getMax($num1, $num2, $num3)
 {
    if($num1>$num2)
