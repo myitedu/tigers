@@ -31,13 +31,19 @@
        </table>
        <div class="Result">
        <?php
-       echo getMax($a, $b, $c); echo"<br>";
-       echo getMin($a, $b ,$c); echo"<br>";
-       echo getMiddle($a, $b ,$c); echo"<br>";
+       echo GetMax($a, $b, $c); echo"<br>";
+       echo GetMin($a, $b ,$c); echo"<br>";
+       echo GetMiddle($a, $b ,$c); echo"<br>";
        ?>
        </div>
    </div>
 <style>
+    button{
+        background-color: lightgreen;
+    }
+    .table tr td, input,button{
+        font-size: x-large;
+    }
   .table{
       text-align: center;
   }
