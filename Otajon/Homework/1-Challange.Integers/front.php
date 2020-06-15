@@ -8,9 +8,7 @@
     <title>Integers</title>
 </head>
 <body>
-<?php
-include "Integers.php";
-?>
+<?php include "Integers.php"; ?>
    <div class="container-fluid">
        <table class="table table-bordered">
            <form method="GET" class="form1">

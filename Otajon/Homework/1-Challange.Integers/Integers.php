@@ -2,45 +2,6 @@
 $a=$_GET['number1']??null;
 $b=$_GET['number2']??null;
 $c=$_GET['number3']??null;
-function getMax($num1, $num2, $num3)
-{
-   if($num1>$num2)
-   {
-      if($num1>$num3){
-          echo" Maximum number is $num1";
-      }
-      else if ($num1<$num3){
-          echo "Maximum number is $num3";
-      }
-      else if($num1=$num3){
-          echo "Maximum number is $num1";
-      }
-   }
-   else  if($num1<$num2)
-   {
-       if($num1>$num3){
-           echo" Maximum number is $num2";
-       }
-       elseif ($num1<$num3 && $num2<$num3){
-           echo "Maximum number is $num3";
-       }
-       else{
-           echo "Maximum number is $num2";
-       }
-   }
-   else if($num1=$num2 ){
-       if($num2>$num3) {
-           echo " Maximum number is $num2";
-       }
-       elseif($num2<$num3)
-       {
-           echo "Maximum number is $num3";
-       }
-       else{
-           echo" All numbers are equil";
-       }
-   }
-}
 function getMin($num1,$num2,$num3)
 {
     if($num1>$num2)

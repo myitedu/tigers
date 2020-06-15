@@ -2,7 +2,7 @@
 var app = angular.module('FlightApp', ['720kb.datepicker', 'ngRoute'])
         .config(['$routeProvider', function ($routeProvider) {
                 $routeProvider
-                        // Home
+                        // Translate
                         .when("/", {controller: "flightController"
                         })
                         .otherwise({redirectTo: '/'})
