@@ -18,25 +18,29 @@ include 'backend.php';
        <h4>Online Xarid Dukoni</h4>
    </div>
     <form method="get">
-        <input type="search" name="keyword">
+        <input type="search" name="keyword" value="<?=$keyword?>">
         <button type="submit" class="btn btn-success">Izlash</button>
     </form>
     <table>
         <tr>
             <td><img src="<?=$arrays->products[0]->thumbnail?>"</td>
             <td><a>Narx:  $ </a><a><?=$arrays->products[0]->price?></a> </td>
+            <td><a href="<?=$arrays->products[0]->url?>"><button>Sotib Olish:</button></a> </td>
         </tr>
         <tr>
             <td><img src="<?=$arrays->products[1]->thumbnail?>"</td>
             <td><a>Narx:  $ </a><a><?=$arrays->products[1]->price?></a> </td>
+            <td><a href="<?=$arrays->products[1]->url?>"><button>Sotib Olish:</button></a> </td>
         </tr>
         <tr>
             <td><img src="<?=$arrays->products[2]->thumbnail?>"</td>
             <td><a>Narx:  $ </a><a><?=$arrays->products[2]->price?></a> </td>
+            <td><a href="<?=$arrays->products[2]->url?>"><button>Sotib Olish:</button></a> </td>
         </tr>
         <tr>
             <td><img src="<?=$arrays->products[3]->thumbnail?>"</td>
             <td><a>Narx:  $ </a><a><?=$arrays->products[3]->price?></a> </td>
+            <td><a href="<?=$arrays->products[3]->url?>"><button>Sotib Olish:</button></a> </td>
         </tr>
         <tr>
     </table>
