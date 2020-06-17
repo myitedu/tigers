@@ -15,28 +15,28 @@ include 'backend.php';
 ?>
 <div class="container-fluid">
    <div class="header1">
-       <h4>Amazon</h4>
+       <h4>Online Xarid Dukoni</h4>
    </div>
     <form method="get">
         <input type="search" name="keyword">
-        <button type="submit" class="btn btn-success">Submit</button>
+        <button type="submit" class="btn btn-success">Izlash</button>
     </form>
     <table>
         <tr>
             <td><img src="<?=$arrays->products[0]->thumbnail?>"</td>
-            <td><a>Price:  $ </a><a><?=$arrays->products[0]->price?></a> </td>
+            <td><a>Narx:  $ </a><a><?=$arrays->products[0]->price?></a> </td>
         </tr>
         <tr>
             <td><img src="<?=$arrays->products[1]->thumbnail?>"</td>
-            <td><a>Price:  $ </a><a><?=$arrays->products[1]->price?></a> </td>
+            <td><a>Narx:  $ </a><a><?=$arrays->products[1]->price?></a> </td>
         </tr>
         <tr>
             <td><img src="<?=$arrays->products[2]->thumbnail?>"</td>
-            <td><a>Price:  $ </a><a><?=$arrays->products[2]->price?></a> </td>
+            <td><a>Narx:  $ </a><a><?=$arrays->products[2]->price?></a> </td>
         </tr>
         <tr>
             <td><img src="<?=$arrays->products[3]->thumbnail?>"</td>
-            <td><a>Price:  $ </a><a><?=$arrays->products[3]->price?></a> </td>
+            <td><a>Narx:  $ </a><a><?=$arrays->products[3]->price?></a> </td>
         </tr>
         <tr>
     </table>
