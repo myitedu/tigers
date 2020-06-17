@@ -1,0 +1,113 @@
+
+
+
+
+.box-5{
+    width:20%;
+    height:72%;
+    float:left;
+    margin-left:4%;
+    border-radius:5px;
+    text-align:center;
+    border:1px solid black;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+}
+.box-6{
+     width:20%;
+     height:72%;
+     float:right;
+    margin-right:4%;
+     border-radius:5px;
+     text-align:center;
+     border:1px solid black;
+     -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+ }
+.box-7{
+    width:20%;
+    height:72%;
+    border-radius:5px;
+    margin-left:28%;
+    text-align:center;
+    border:1px solid black;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+}
+.box-8{
+    width:20%;
+    height:72%;
+    margin-left:52%;
+    margin-top:-19%;
+    border-radius:5px;
+    text-align:center;
+    border:1px solid black;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+}
+#Box{
+    width:100%;
+    height:35%;
+    margin-top:10%;
+    background-color:white;
+}
+.img{
+    width:80%;
+}
+body{
+    width:100%;
+    height:700px;
+    background-color:darkgrey !important;
+}
+.container{
+    width:70%;
+    height:700px;
+    margin:0;
+    background-color:white !important;
+}
+.header{
+    width:100%;
+    height:80px;
+    margin:0;
+}
+.box-1{
+    width:20%;
+    height:25%;
+    float:left;
+    margin-left:4%;
+    text-align:center;
+    border-radius:5px;
+    border:1px solid black;
+    background-color:white;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+}
+.box-2{
+    width:20%;
+    height:25%;
+    float:right;
+    margin-right:4%;
+    text-align:center;
+    border-radius:5px;
+    border:1px solid black;
+    background-color:white;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+}
+.box-3{
+    width:20%;
+    height:25%;
+    margin-left:28%;
+    text-align:center;
+    border-radius:5px;
+    border:1px solid black;
+    background-color:white;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+}
+.box-4{
+    width:20%;
+    height:25%;
+    margin-left:52%;
+    margin-top:-18.9%;
+    border-radius:5px;
+    text-align:center;
+    border:1px solid black;
+    background-color:white;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+

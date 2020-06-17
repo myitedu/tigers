@@ -6,7 +6,7 @@ $post = [];
 
 $curl = curl_init ();
 curl_setopt_array ($curl, array (
-		CURLOPT_URL => "https://easy-instagram-service.p.rapidapi.com/username?random=x8n3nsj2&username=a.ogabek.03",
+		CURLOPT_URL => "https://easy-instagram-service.p.rapidapi.com/username?random=x8n3nsj2&username=a",
 		CURLOPT_RETURNTRANSFER => true,
 		CURLOPT_FOLLOWLOCATION => true,
 		CURLOPT_ENCODING => "",
