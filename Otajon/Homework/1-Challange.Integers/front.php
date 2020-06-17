@@ -8,7 +8,7 @@
     <title>Integers</title>
 </head>
 <body>
-<?php include "Integers.php"; ?>
+<?php include "Maximum.php"; ?>
    <div class="container-fluid">
        <table class="table table-bordered">
            <form method="GET" class="form1">
@@ -31,8 +31,8 @@
        </table>
        <div class="Result">
        <?php
-       echo GetMax($a, $b, $c); echo"<br>";
-       echo GetMin($a, $b ,$c); echo"<br>";
+       echo Max($a, $b, $c); echo"<br>";
+       echo Min($a, $b ,$c); echo"<br>";
        echo GetMiddle($a, $b ,$c); echo"<br>";
        ?>
        </div>
