@@ -10,7 +10,7 @@ $(function () {
 
 
     function callBackend(side) {
-        $.post("../backend.php",{side:side},function (result) {
+        $.post("../backend.txt",{side:side},function (result) {
             alert(result);
         });
     }

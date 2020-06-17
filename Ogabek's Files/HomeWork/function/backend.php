@@ -1,132 +1,57 @@
 <?php
-$a=$_GET['number1']??null;
-$b=$_GET['number2']??null;
-$c=$_GET['number3']??null;
-function getMax($num1, $num2, $num3){
-		if($num1>$num2) {
-				if($num1>$num3){
-						echo" Maximum number is $num1";
-				}else if ($num1<$num3){
-						echo "Maximum number is $num3";
-				}else if($num1=$num3){
-						echo "Maximum number is $num1";
+
+function getValue($a, $b, $c){
+		
+		if (($a > $b) && ($a > $c)) {
+				$max = $a;
+				
+				if ($b > $c) {
+						$mid = $b;
+						$min = $c;
+				} else {
+						$mid = $c;
+						$min = $b;
 				}
-		}else  if($num1<$num2){
-				if($num1>$num3){
-						echo" Maximum number is $num2";
+		} else if(($b > $a) && ($b > $c)){
+				$max = $b;
+				
+				if ($a > $c) {
+						$mid = $a;
+						$min = $c;
+				} else {
+						$mid = $c;
+						$min = $a;
 				}
-				elseif ($num1<$num3 && $num2<$num3){
-						echo "Maximum number is $num3";
-				}
-				else{
-						echo "Maximum number is $num2";
-				}
-		}
-		else if($num1=$num2 ){
-				if($num2>$num3) {
-						echo " Maximum number is $num2";
-				}
-				elseif($num2<$num3)
-				{
-						echo "Maximum number is $num3";
-				}
-				else{
-						echo" All numbers are equil";
+		} else if(($c > $a) && ($c > $b)){
+				$max = $c;
+				if ($a > $b){
+						$mid = $a;
+						$min = $b;
+				}else{
+						$mid = $b;
+						$min = $a;
 				}
 		}
+		return "This is Minimum Number:&nbsp". $min."<hr>This is Middle Number:&nbsp"
+				. $mid."<hr>This is Maximum Number:&nbsp". $max;
 }
-function getMin($num1,$num2,$num3)
-{
-		if($num1>$num2)
-		{
-				if($num2>$num3)
-				{
-						echo "Minimum number is $num3";
-				}
-				else if ($num2<$num3){
-						echo "Minimum number is $num2";
-				}
-				else{
-						echo "Minimum number is $num2";
-				}
-		}
-		else if($num1<$num2)
-		{
-				if($num1<$num3)
-				{
-						echo"Minimum number is $num1";
-				}
-				elseif($num1>$num3){
-						echo"Minimum number is $num3";
-				}
-				else{
-						echo"Minimum number is $num1";
-				}
-		}
-		else if($num1=$num2){
-				if($num1>$num3)
-				{
-						echo"Minimum number is $num3";
-				}
-				else if($num1<$num3)
-				{
-						echo"Minimum number is $num1";
-				}
-				else{
-						echo "All numbers are equil";
-				}
-		}
+echo getValue (-66,-2,-3);
+
+/*
+function getMax($array){
+		$n = count($array);
+		$m = count($array);
+		$max = $array[0];
+		$min = $array[0];
+		for ($i = 1; $i < $n; $i++)
+				if ($max < $array[$i])
+						$max = $array[$i];
+		for ($i = 1; $i > $m; $i++)
+				if ($min > $array[$i])
+						$min = $array[$i];
+		return "This is Max Number: &nbsp&nbsp".$max. "<hr>This is Min Number : &nbsp &nbsp
+               ".$min."<hr>"."This is Normal Number: &nbsp &nbsp". $max /2;
 }
-function getMiddle($num1,$num2,$num3)
-{
-		if($num1>$num2)
-		{
-				if($num1>$num3 && $num2<$num3)
-				{
-						echo" Middle number is $num2";
-				}
-				else if ($num1>$num3 && $num2>$num3 )
-				{
-						echo "Middle number is $num2";
-				}
-				else if( $num1<$num3){
-						echo "Middle number is $num1";
-				}
-				else if ($num1=$num3){
-						echo "We have two same number $num3 and smallar number is $num2";
-				}
-				else if($num2=$num3)
-				{
-						echo "We have two same number $num2 and bigger number is $num1";
-				}
-		}
-		else if($num1<$num2)
-		{
-				if ($num1<$num3 && $num2<$num3)
-				{
-						echo "Middle number is $num2";
-				}
-				else if($num1<$num3 && $num2>$num3)
-				{
-						echo "Middle number is $num3";
-				}
-				else if($num1>$num3)
-				{
-						echo"Middle number is $num1";
-				}
-				else if($num1=$num3)
-				{
-						echo "We have two same number $num1 and bigger number is $num2";
-				}
-		}
-		else if($num1=$num2 && $num1>$num3){
-				echo "We have two same numbers and one Minimum number $num3";
-		}
-		else if($num1=$num2 && $num1<$num3){
-				echo "We have two same numbers and one Maximum number $num3";
-		}
-		else{
-				echo "All numbers are same";
-		}
-}
+echo getMax (range (1,57));
+*/
 ?>
