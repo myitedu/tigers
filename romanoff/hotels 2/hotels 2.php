@@ -10,6 +10,9 @@
     <script src="/js/jquery.js"></script>
 </head>
 <body>
+<?php
+include "backend.php";
+?>
 <div class="container-fluid">
     <div id="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -55,11 +58,11 @@
         <div id="form_search">
             <h4>Search your hotel</h4>
             <div class="myform">
-                <form action="backend.php" method="get">
+                <form method="get">
                     <table class="table">
                         <tr>
                             <td>
-                                <div class=""
+                                <input name="location" type="text">
                             </td>
                         </tr>
                         <tr><td>yep</td></tr>
@@ -108,13 +111,33 @@
 
 </div>
 <div id="results">
-    <div class="jumbotron">
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-    </div>
+    <?php
+    if (isset($hotels)){
+        $i=0;
+    foreach($hotels as $row=>$hotel) {
+        ?>
+        <div class="jumbotron">
+            <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">
+                <pre>
+                 <?php
+                 print_r($hotel[$i]);
+                 ?>
+            </pre>
+
+            </p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </div>
+        <?php
+        $i++;
+    }
+    }
+    ?>
+
+
+
 </div>
 <div class="form group">
 
