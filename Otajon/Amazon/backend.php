@@ -1,5 +1,5 @@
 <?php
-$keyword=strip_tags($_GET['keyword']??'Apple');
+$keyword = strip_tags($_GET['keyword']??'Apple');
 $arrays=[];
 $curl = curl_init();
 curl_setopt_array($curl, array(

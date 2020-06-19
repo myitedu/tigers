@@ -31,13 +31,16 @@ function getValue($a, $b, $c){
 						$mid = $b;
 						$min = $a;
 				}
+		}else if(($a = $b) && ($b = $c)){
+				echo "All numbers are equal";
 		}
 		return "This is Minimum Number:&nbsp". $min."<hr>This is Middle Number:&nbsp"
 				. $mid."<hr>This is Maximum Number:&nbsp". $max;
 }
-echo getValue (-66,-2,-3);
+echo getValue (688,6,68);
 
 /*
+
 function getMax($array){
 		$n = count($array);
 		$m = count($array);
@@ -54,4 +57,5 @@ function getMax($array){
 }
 echo getMax (range (1,57));
 */
+
 ?>

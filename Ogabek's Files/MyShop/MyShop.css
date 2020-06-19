@@ -4,7 +4,7 @@
 
 .box-5{
     width:20%;
-    height:72%;
+    height:90%;
     float:left;
     margin-left:4%;
     border-radius:5px;
@@ -14,7 +14,7 @@
 }
 .box-6{
      width:20%;
-     height:72%;
+     height:90%;
      float:right;
     margin-right:4%;
      border-radius:5px;
@@ -24,7 +24,7 @@
  }
 .box-7{
     width:20%;
-    height:72%;
+    height:90%;
     border-radius:5px;
     margin-left:28%;
     text-align:center;
@@ -33,7 +33,7 @@
 }
 .box-8{
     width:20%;
-    height:72%;
+    height:90%;
     margin-left:52%;
     margin-top:-19%;
     border-radius:5px;
@@ -49,6 +49,7 @@
 }
 .img{
     width:80%;
+    height:70%;
 }
 body{
     width:100%;
