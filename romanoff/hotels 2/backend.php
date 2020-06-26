@@ -1,6 +1,6 @@
 <?php
 $location = $_GET ["location"]??null;
-function callApi($location){
+function searchApi($location){
     $curl = curl_init();
     curl_setopt_array($curl, array(
         CURLOPT_URL => "https://tripadvisor1.p.rapidapi.com/locations/search?location_id=1&limit=30&sort=relevance&offset=0&lang=en_US&currency=USD&units=km&query=$location",
@@ -18,26 +18,35 @@ function callApi($location){
     ));
     $response = curl_exec($curl);
     $err = curl_error($curl);
-
     curl_close($curl);
     return $response;
 }
-if ($location) {
-    $hotels = callApi($location);
-    $hotels = json_decode($hotels, 1);
+
+if ($err) {
+    return [
+        'error' => 1,
+        'output' => $err
+    ];
+} else {
+    return [
+        'error' => 0,
+        'output' => $response
+    ];
 }
 
+$results = searchApi($location);
+$results = json_decode($results['output']);
 echo "<pre>";
-foreach($hotels['data'] as $hotel){
-    echo $hotel['result_object']['name'];
-   echo "<img class='myimg' src='{$hotel['result_object']['photo']['images']['small']['url']}'>";
-    echo "<hr>";
-}
 ?>
-<style>
-    .myimg{
-        width: 300px;
-    }
-</style>
-<?php
-exit;
+<img src="<?=$results->data[0]->result_object->photo->images->large->url?>">
+<hr>
+<h3><?=$results->data[0]->result_object->name;?></h3>
+<?
+print_r($results->data[0]->result_object);?>
+
+
+
+
+
+
+

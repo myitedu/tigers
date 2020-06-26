@@ -55,7 +55,7 @@
 			<div id="form_search">
 				<h4>Search your hotel</h4>
 				<div  class="myform" >
-					<form action="backend.php" method="get">
+					<form action="backend2.php" method="get">
 
                         <table class="table">
                             <tr>
