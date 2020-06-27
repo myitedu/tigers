@@ -18,17 +18,15 @@ function searchApi($location){
     ));
     $response = curl_exec($curl);
     $err = curl_error($curl);
-
     curl_close($curl);
-
     if ($err) {
         return [
-            'error' => true,
+            'error' => 1,
             'output' => $err
         ];
     } else {
         return [
-            'error' => false,
+            'error' => 0,
             'output' => $response
         ];
     }

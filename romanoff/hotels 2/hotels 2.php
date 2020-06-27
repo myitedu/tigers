@@ -50,48 +50,57 @@
     </nav>
     </div>
     <div id="mycarousel">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <div id="search">
-                <h4>Search your hotel</h4>
-                <div class="myform">
-                    <form action="backend2.php" method="get">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Location</label>
-                            <input type="location" class="form-control" id="Inputlocation" aria-describedby="location" name="location">
-                            <small id="Help" class="form-text text-muted">We are happy to getting to help you</small>
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <div id="search">
+                    <h4>Search your hotel</h4>
+                    <div class="myform">
+                        <form action="backennd.php" method="get">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Location</label>
+                                <input type="location" class="form-control" id="Inputlocation" aria-describedby="location" name="location">
+                                <small id="Help" class="form-text text-muted">We are happy to getting to help you</small>
+                            </div>
+                            <button type="submit" class="btn btn-warning">Search</button>
+                        </form>
+                    </div>
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/sheraton4000x1600.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                         </div>
-                        <button type="submit" class="btn btn-warning">Search</button>
-                    </form>
-
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Hyatt748x464.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/holiday-inn1024x676.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        </div>
+                    </div>
                 </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/sheraton4000x1600.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/Hyatt748x464.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/holiday-inn1024x676.jpg" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-
-    </div>
     <div id="results">
         <div class="jumbotron">
             <h1 class="display-4">Hello, world!</h1>

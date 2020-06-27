@@ -17,32 +17,28 @@ function searchApi($location){
         ),
     ));
     $response = curl_exec($curl);
-    $err = curl_error($curl);
+    curl_error($curl);
     curl_close($curl);
     return $response;
 }
 
 if ($err) {
     return [
-        'error' => 1,
+        'error' => true,
         'output' => $err
     ];
 } else {
     return [
-        'error' => 0,
+        'error' => false,
         'output' => $response
     ];
 }
+
 
 $results = searchApi($location);
 $results = json_decode($results['output']);
 echo "<pre>";
 ?>
-<img src="<?=$results->data[0]->result_object->photo->images->large->url?>">
-<hr>
-<h3><?=$results->data[0]->result_object->name;?></h3>
-<?
-print_r($results->data[0]->result_object);?>
 
 
 
