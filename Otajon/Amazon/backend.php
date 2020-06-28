@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
 $keyword=strip_tags($_GET['keyword']??'TV');
+=======
+$keyword = strip_tags($_GET['keyword']??'Apple');
+>>>>>>> c9905006d9da900f00732a7faa39951541cb3772
 $arrays=[];
 $curl = curl_init();
 curl_setopt_array($curl, array(

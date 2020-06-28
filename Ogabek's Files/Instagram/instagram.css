@@ -1,0 +1,105 @@
+
+
+
+.my_table{
+    width:100%;
+    height:130px;
+    font-size:80%;
+}
+.box-1{
+    width:30%;
+    float:left;
+    height:100%;
+    text-align:center;
+    border:3px solid #555;
+    border-radius:10px;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+}
+.box-2{
+    width:30%;
+    float:right;
+    height:100%;
+    text-align:center;
+    border:3px solid #555;
+    border-radius:10px;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+}
+.box-3{
+    width:30%;
+    height:100%;
+    margin-left:35%;
+    text-align:center;
+    border:3px solid #555;
+    border-radius:10px;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+}
+.posts{
+    width:100%;
+    height:280px;
+    text-align:center;
+    margin-top:20%;
+}
+.biography{
+    width: 80%;
+    height: 130px;
+    float: right;
+    border-radius:10px;
+    margin-top: 3%;
+    text-align:center;
+    border: 3px solid #848282;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+}
+.profile{
+    width:16%;
+    height:25%;
+    float:left;
+    border-radius:10%;
+    margin-left:2%;
+    margin-top:1%;
+    border:3px solid #848282;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+}
+.header{
+    width:100%;
+    height:50px;
+    margin:0;
+    padding:10px 10px;
+    font-size:100%;
+    border-bottom:2px solid #d1d1d1;
+    background-color:whitesmoke;
+}
+.container-fluid{
+    width:100%;
+    height:650px;
+    margin:0;
+}
+body{
+    width:100%;
+    height:650px;
+    background-color:whitesmoke;
+}
+h4{
+    color:red;
+    font-family:cursive;
+    display:inline-block;
+}
+.input{
+    width: 20%;
+    height: 25px;
+    margin-left: 10%;
+    font-size: 100%;
+    text-align:center;
+}
+.profile_img{
+    width:100%;
+    height:100%;
+    border-radius:8%;
+}
+.post_img{
+    width:100%;
+    height:90%;
+    border-radius:10px;
+}
+.fa-heart{
+    color:red;
+}

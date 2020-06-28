@@ -19,7 +19,7 @@
 		<table class="table">
 				<tbody>
 				<tr>
-						<td style="height:229px;width:25%"><img class="img" src="" alt=""></td>
+						<td style="height:229px;width:25%"><img class="img" src="" alt=""><p>This is</p></td>
 						<td style="height:229px;width:25%"><img class="img" src="" alt=""></td>
 						<td style="height:229px;width:25%"><img class="img" src="" alt=""></td>
 						<td style="height:229px;width:25%"><img class="img" src="" alt=""></td>
