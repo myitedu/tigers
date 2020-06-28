@@ -31,9 +31,9 @@
        </table>
        <div class="Result">
        <?php
-       echo Max($a, $b, $c); echo"<br>";
-       echo Min($a, $b ,$c); echo"<br>";
+       echo "Maximum number is: ".Max($a, $b, $c); echo"<br>";
        echo GetMiddle($a, $b ,$c); echo"<br>";
+       echo "Minimum number is: ".Min($a, $b ,$c); echo"<br>";
        ?>
        </div>
    </div>

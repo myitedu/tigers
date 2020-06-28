@@ -2,12 +2,7 @@
 $a=$_GET['number1']??null;
 $b=$_GET['number2']??null;
 $c=$_GET['number3']??null;
-<<<<<<< HEAD
-$a=$_GET['number1']??'-23';
-$b=$_GET['number2']??'43';
-$c=$_GET['number3']??'23';
-=======
->>>>>>> 21fb299e3946a84124de2b4c9f8ae3e37f03c438
+
 function getMax($num1, $num2, $num3)
 {
    if($num1>$num2)

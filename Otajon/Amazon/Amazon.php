@@ -13,18 +13,18 @@
 <?php
 include 'backend.php';
 ?>
+<div class="header1">
+    <img class="foto-logo" src="http://www.web-savvy-marketing.com/wp-content/uploads/2013/11/Online-Shopping-Bags.jpg">
+    <h4>Online Xarid Dukoni</h4>
+    <form method="get">
+        <input type="search" name="keyword" value="<?=$keyword?>">
+        <button type="submit" class="btn btn-success">Izlash</button>
+    </form>
+</div>
 <div class="container-fluid">
-   <div class="header1">
-       <img class="foto-logo" src="http://www.web-savvy-marketing.com/wp-content/uploads/2013/11/Online-Shopping-Bags.jpg">
-       <h4>Online Xarid Dukoni</h4>
-       <form method="get">
-           <input type="search" name="keyword" value="<?=$keyword?>">
-           <button type="submit" class="btn btn-success">Izlash</button>
-       </form>
-   </div>
     <table>
         <tr>
-            <td><img src="<?=$arrays->products[0]->thumbnail?>"</td>
+            <td id="td1"><img style="background-color: red" src="<?=$arrays->products[0]->thumbnail?>"</td>
             <td id="td2"><a><i class="fa fa-heading"></i>  Sarlavha:  </a><a><?=$arrays->products[0]->title?></a></td>
             <td id="td3"><a> <i class="fa fa-money-bill"></i>  Narx:  $ </a><a><?=$arrays->products[0]->price?></a> </td>
             <td id="td3"><a><i class="fa fa-level-up-alt"></i>  Daraja:   </a><a><?=$arrays->products[0]->rating?></a> </td>
@@ -32,7 +32,7 @@ include 'backend.php';
             <td id="td4"><a href="<?=$arrays->products[0]->url?>"><button>  Sotib Olish:</button></a> </td>
         </tr>
         <tr>
-            <td><img src="<?=$arrays->products[1]->thumbnail?>"</td>
+            <td id="td1"><img src="<?=$arrays->products[1]->thumbnail?>"</td>
             <td id="td2"><a><i class="fa fa-heading"></i>  Sarlavha:  </a><a><?=$arrays->products[1]->title?></a></td>
             <td id="td3"><a> <i class="fa fa-money-bill"></i>  Narx:  $ </a><a><?=$arrays->products[1]->price?></a> </td>
             <td id="td3"><a><i class="fa fa-level-up-alt"></i>  Daraja:   </a><a><?=$arrays->products[1]->rating?></a> </td>
@@ -40,7 +40,7 @@ include 'backend.php';
             <td id="td4"><a href="<?=$arrays->products[1]->url?>"><button>  Sotib Olish:</button></a> </td>
         </tr>
         <tr>
-            <td><img src="<?=$arrays->products[2]->thumbnail?>"</td>
+            <td id="td1"><img src="<?=$arrays->products[2]->thumbnail?>"</td>
             <td id="td2"><a><i class="fa fa-heading"></i>  Sarlavha:  </a><a><?=$arrays->products[2]->title?></a></td>
             <td id="td3"><a> <i class="fa fa-money-bill"></i>  Narx:  $ </a><a><?=$arrays->products[2]->price?></a> </td>
             <td id="td3"><a><i class="fa fa-level-up-alt"></i>  Daraja:   </a><a><?=$arrays->products[2]->rating?></a> </td>
@@ -48,7 +48,7 @@ include 'backend.php';
             <td id="td4"><a href="<?=$arrays->products[2]->url?>"><button>  Sotib Olish:</button></a> </td>
         </tr>
         <tr>
-            <td><img src="<?=$arrays->products[3]->thumbnail?>"</td>
+            <td id="td1"><img src="<?=$arrays->products[3]->thumbnail?>"</td>
             <td id="td2"><a><i class="fa fa-heading"></i>  Sarlavha:  </a><a><?=$arrays->products[3]->title?></a></td>
             <td id="td3"><a> <i class="fa fa-money-bill"></i>  Narx:  $ </a><a><?=$arrays->products[3]->price?></a> </td>
             <td id="td3"><a><i class="fa fa-level-up-alt"></i>  Daraja:   </a><a><?=$arrays->products[3]->rating?></a> </td>
@@ -63,11 +63,10 @@ include 'backend.php';
                         <span class="sr-only">Previous</span>
                     </a>
                 </li>
-                <li class="page-item"><a class="page-link" href="<?=$arrays->next_page?>">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="Amazon.php">1</a></li>
+                <li class="page-item"><a class="page-link" href="Amazon1.php">2</a></li>
                 <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
+                    <a class="page-link" href="Amazon1.php" aria-label="Next">
                         <span aria-hidden="true">&raquo;</span>
                         <span class="sr-only">Next</span>
                     </a>
@@ -77,23 +76,36 @@ include 'backend.php';
     </table>
 </div>
 <style>
+    .container-fluid{
+        background-color: rgba(232, 227, 227, 0.84);
+        width:90%;
+    }
+    #td1 img{
+        position:relative;
+        top:-20px;
+    }
+    #td1{
+       left:200px;
+        position: relative;
+    }
      button{
          background-color: #4dcc7d;
      }
     #td4{
         width:200px;
         bottom:50px;
+        left:-500px;
+        top:80px;
+        position:relative;
     }
     #td3{
-        width:50px;
-        left:-200px;
+        left:-100px;
         position:relative;
-        padding:60px;
 
     }
   #td2{
       top:-100px;
-      left:400px;
+      left:250px;
       position:relative;
   }
     .foto-logo{
@@ -110,8 +122,8 @@ include 'backend.php';
         text-align: center;
         margin-left:400px;
     }
-    table,th,td{
-        padding:30px;
+    table,tr,td{
+        padding:10px;
     }
     .header1 h4{
         text-align: center;
