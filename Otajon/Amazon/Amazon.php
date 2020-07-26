@@ -29,7 +29,7 @@ include 'backend.php';
             <td id="td3"><a> <i class="fa fa-money-bill"></i>  Narx:  $ </a><a><?=$arrays->products[0]->price?></a> </td>
             <td id="td3"><a><i class="fa fa-level-up-alt"></i>  Daraja:   </a><a><?=$arrays->products[0]->rating?></a> </td>
             <td id="td3"><a><i class="fa fa-street-view"></i>  Tomoshabin:   </a><a><?=$arrays->products[0]->reviews?></a> </td>
-            <td id="td4"><a href="<?=$arrays->products[0]->url?>"><button>  Sotib Olish:</button></a> </td>
+            <a id="td4" href="<?=$arrays->products[0]->url?>"><button>  Sotib Olish: </button></a> 
         </tr>
         <tr>
             <td id="td1"><img src="<?=$arrays->products[1]->thumbnail?>"</td>

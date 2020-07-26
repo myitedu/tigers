@@ -1,9 +1,10 @@
 <?php
-$keyword=strip_tags($_GET['keyword']??'TV');
-$arrays=[];
+$videos=strip_tags($_GET["videos"]??'dogs');
+$tiktok=[];
 $curl = curl_init();
+
 curl_setopt_array($curl, array(
-    CURLOPT_URL => "https://amazon-product-reviews-keywords.p.rapidapi.com/product/search?country=US&keyword=$keyword",
+    CURLOPT_URL => "https://tiktok.p.rapidapi.com/live/hashtag/feed?name=$videos",
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_FOLLOWLOCATION => true,
     CURLOPT_ENCODING => "",
@@ -12,7 +13,7 @@ curl_setopt_array($curl, array(
     CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
     CURLOPT_CUSTOMREQUEST => "GET",
     CURLOPT_HTTPHEADER => array(
-        "x-rapidapi-host: amazon-product-reviews-keywords.p.rapidapi.com",
+        "x-rapidapi-host: tiktok.p.rapidapi.com",
         "x-rapidapi-key: 074c00bcdfmshc5273e5c025ce3cp1bd31bjsn590ab169acbe"
     ),
 ));
@@ -25,5 +26,5 @@ curl_close($curl);
 if ($err) {
     echo "cURL Error #:" . $err;
 } else {
-    $arrays=json_decode($response);
+    $tiktok=json_decode($response);
 }
